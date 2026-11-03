@@ -3,25 +3,15 @@
   "active_task": {
     "task_id": "task-chronos-audit-waves-v1",
     "last_phase": "phase 4",
-    "active_phase": 4,
-    "status": "in_progress",
+    "active_phase": 5,
+    "status": "completed",
     "updated_at": 1793722162.408602,
     "owner": "kilo:chronos-audit",
     "started_by": "kilo:chronos-audit",
-    "continuations": []
+    "continuations": [],
+    "completed_at": 1793722203.8432703
   },
   "checkpoints": [
-    {
-      "task_id": "reforge:run-1",
-      "phase": "reforge stage 7",
-      "phase_num": 3,
-      "description": "Reforge stage 7: run stopped at stage 7; resume it with `reforge resume`",
-      "files_affected": [],
-      "status": "suspended",
-      "timestamp": 1793283636.5481637,
-      "timestamp_str": "2026-10-29 17:20:36",
-      "agent": "opencode"
-    },
     {
       "task_id": "task-chronos-locking-v1",
       "phase": "phase 2",
@@ -246,6 +236,16 @@
       "status": "in_progress",
       "timestamp": 1793722162.408602,
       "timestamp_str": "2026-11-03 19:09:22",
+      "agent": "kilo:chronos-audit"
+    },
+    {
+      "task_id": "task-chronos-audit-waves-v1",
+      "phase": "completed",
+      "phase_num": 5,
+      "description": "Task 'task-chronos-audit-waves-v1' completed successfully.",
+      "status": "completed",
+      "timestamp": 1793722203.843272,
+      "timestamp_str": "2026-11-03 19:10:03",
       "agent": "kilo:chronos-audit"
     }
   ]
