@@ -6,8 +6,10 @@
   "created": "2026-10-17",
   "has_ui": false,
   "ui_kind": "cli",
-  "ui_evidence": [],
-  "ui_checked_at": "2026-10-29",
+  "ui_evidence": [
+    "tests/test_cli.py"
+  ],
+  "ui_checked_at": "2026-11-03",
   "ui_source": "detected",
   "topics": [
     "aikit",

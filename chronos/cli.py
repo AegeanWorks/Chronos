@@ -36,7 +36,7 @@ def _positive_int(value: str) -> int:
     """Argparse type: an integer of at least 1."""
     try:
         parsed = int(value)
-    except ValueError:
+    except (TypeError, ValueError):
         raise argparse.ArgumentTypeError(f"expected an integer, got '{value}'")
     if parsed < 1:
         raise argparse.ArgumentTypeError(f"expected a positive integer, got '{value}'")
@@ -47,7 +47,7 @@ def _non_negative_int(value: str) -> int:
     """Argparse type: an integer of at least 0."""
     try:
         parsed = int(value)
-    except ValueError:
+    except (TypeError, ValueError):
         raise argparse.ArgumentTypeError(f"expected an integer, got '{value}'")
     if parsed < 0:
         raise argparse.ArgumentTypeError(f"expected a non-negative integer, got '{value}'")

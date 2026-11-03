@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
-from chronos.cli import main
+from chronos.cli import _non_negative_int, _positive_int, main
 
 
 class TestCLIIntegration(unittest.TestCase):
@@ -442,6 +442,16 @@ class TestCLIIntegration(unittest.TestCase):
         code, _, err = self.run_cli("task", "show", "task_unknown")
         self.assertEqual(code, 1)
         self.assertIn("not found", err)
+
+    def test_argparse_int_helpers_reject_none_with_argument_error(self):
+        # Wave 0 CLI (milestone 4): helpers caught ValueError only, so None
+        # escaped as TypeError instead of argparse.ArgumentTypeError.
+        import argparse
+
+        with self.assertRaises(argparse.ArgumentTypeError):
+            _positive_int(None)
+        with self.assertRaises(argparse.ArgumentTypeError):
+            _non_negative_int(None)
 
 
 if __name__ == "__main__":

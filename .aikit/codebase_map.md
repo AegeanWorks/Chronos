@@ -9,8 +9,8 @@
 - **Total Python Modules**: `15`
 - **Total Classes**: `16`
 - **Total Top-Level Functions**: `27`
-- **Total Class Methods**: `114`
-- **Total Source Lines**: `2385`
+- **Total Class Methods**: `115`
+- **Total Source Lines**: `2395`
 
 ---
 
@@ -37,7 +37,7 @@
 ### [`chronos/cli.py`](chronos/cli.py)
 > *Command-line interface for Chronos.*
 
-**Size**: `492` lines (`21451` bytes)
+**Size**: `492` lines (`21477` bytes)
 
 **Functions:**
 - `def _configure_output_encoding()` - *Keep emoji output from crashing when the terminal cannot encode it.*
@@ -182,7 +182,7 @@
 ### [`tests/test_cli.py`](tests/test_cli.py)
 > *Integration tests for Chronos CLI commands.*
 
-**Size**: `448` lines (`17472` bytes)
+**Size**: `458` lines (`17939` bytes)
 
 **Classes:**
 - `class TestCLIIntegration`
@@ -209,6 +209,7 @@
   - Method `.test_task_remove_errors()`
   - Method `.test_task_list_filtering_and_json()`
   - Method `.test_task_show_text_and_json()`
+  - Method `.test_argparse_int_helpers_reject_none_with_argument_error()`
 
 ---
 
