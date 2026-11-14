@@ -3,7 +3,9 @@
 .aikit/*.bak
 .aikit/*.tmp_*
 .aikit/*.corrupt_*
+.aikit/*.log
 .aikit/reforge.reviews/
+node_modules/
 
 # Python caches
 __pycache__/
@@ -11,8 +13,3 @@ __pycache__/
 
 # Local Chronos runtime data
 .chronos/
-
-# AIKit transient state
-node_modules/
-# AIKit transient state
-.aikit/*.log
