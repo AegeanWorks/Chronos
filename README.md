@@ -8,6 +8,8 @@
 
 Chronos is a lightweight, local-first developer focus and session orchestrator. It helps developers track deep-work sessions, manage micro-milestones, log interruptions, and generate productivity insights with zero external dependencies.
 
+> **Archived**: Retired by its owner; no further development is planned. (archived 2026-11-15). This project is read-only; its GitHub repository is archived.
+
 ## ⚡ 30-Second Cold-Start Quick Reference
 
 - **Runtime Prerequisites**: Python 3.10+ (standard library only; zero third-party packages required).

@@ -55,5 +55,10 @@
     "source-available",
     "aegean-license",
     "commercial-license"
-  ]
+  ],
+  "archived": true,
+  "archived_at": "2026-11-15",
+  "archive_reason": "Retired by its owner; no further development is planned.",
+  "archive_repo": "AegeanWorks/Chronos",
+  "archive_description": "[ARCHIVED] Chronos is a lightweight, local-first developer focus and session orchestrator. It helps developers track deep-work sessions, manage micro-milestones, log interruptions, and generate productivity insights with zero external dependencies."
 }
